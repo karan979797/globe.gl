@@ -16,7 +16,8 @@
 
     // from https://www.submarinecablemap.com
     //fetch('//http-proxy.vastur.com?url=https://www.submarinecablemap.com/api/v3/cable/cable-geo.json')
-    fetch('https://www.submarinecablemap.com/api/v3/cable/cable-geo.json')
+    fetch('cables.json')
+
       .then(r => r.json())
       .then(cablesGeo => {
         let cablePaths = [];
